@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahul Verma</title>
     <link rel="stylesheet" href="style.css" />
+    <link " href="media.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -14,6 +15,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="./index.js"></script>
   </head>
   <body>
     <header class="img-1 height-header background-decor">
@@ -24,6 +26,30 @@
           <a href="#project">Project</a>
           <a href="#contect">contects</a>
         </nav>
+      </div>
+      <div class="header--option--2 d--none">
+        <div class="navi--iconBox">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="svg--icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <div class="navi-drop d--none">
+          <a href="#about">About Me</a>
+          <a href="#project">Project</a>
+          <a href="#contect">contects</a>
+        </div>
+        <p class="webname">📘Portfolio</p>
       </div>
       <div class="box-posi box-posi-background">
         <div>
@@ -49,7 +75,7 @@
       <p>Feel free to get in touch or take a look at my past work below.</p>
     </section>
 
-    <section id="education" class="img-2 height-s2 background-decor">
+    <section id="education" class="img-2 education-section background-decor">
       <div class="education">
         <div>
           <div class="icon--box">
@@ -162,7 +188,7 @@
       <p>Feel free to take a look at my past work below.</p>
     </section>
 
-    <section class="img-3 height-s2 background-decor">
+    <section class="img-3 sec-project background-decor">
       <div class="js--projects">
         <div>
           <h6>Tic Tac Toe</h6>
@@ -206,7 +232,7 @@
           >
         </div>
         <div class="seemore-cont">
-          <p class="seeMore">see more &darr;</p>
+          <p class="seeMore">more &darr;</p>
         </div>
       </div>
     </section>
@@ -224,7 +250,7 @@
     </section>
 
     <footer id="contect" class="img-1 height-footer background-decor">
-      <div class="box-posi blog-posi-left">
+      <div class="contect-box">
         <div>
           <a href="#"><ion-icon class="icon" name="logo-github"></ion-icon></a>
           <a href="#"

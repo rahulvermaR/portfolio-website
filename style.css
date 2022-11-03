@@ -62,7 +62,7 @@ html {
 .web-cont {
   text-transform: uppercase;
 
-  width: 80%;
+  width: 85rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 6fr 4fr;
@@ -80,15 +80,15 @@ html {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 nav a {
-  font-size: 2rem;
+  width: inherit;
+  font-size: 1.6rem;
   text-decoration: none;
   color: #111;
   font-weight: bold;
   transition: all 2s;
-  padding: 1.2rem 2.4rem;
 
   border-radius: 8px;
 }
@@ -105,23 +105,6 @@ h2 {
   color: #fff;
 }
 
-.btn:link,
-.btn:visited {
-  padding: 1.2rem 2.4rem;
-  background-color: #e67e22;
-  color: #fff;
-  font-weight: bold;
-  font-size: 2.4rem;
-  text-decoration: none;
-  border-radius: 12px;
-  box-shadow: 0 2px 2px rgba(139, 139, 139, 0.774);
-  transition: all 0.3s;
-}
-.btn:hover,
-.btn:active {
-  background-color: #a15818;
-  color: #fff;
-}
 .profile-div {
   background-color: #dfdfdf;
   height: 24rem;
@@ -146,7 +129,7 @@ h2 {
   padding: 12rem 0 3rem 0;
 }
 .section-1 h1 {
-  width: 70%;
+  width: 85rem;
   font-size: 3.2rem;
   margin: 0 auto;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
@@ -154,17 +137,19 @@ h2 {
   text-transform: uppercase;
 }
 .section-1 p {
-  width: 70%;
+  width: 85rem;
   font-size: 2.4rem;
   margin: 0 auto;
 }
-
+.education-section {
+  padding: 3rem;
+}
 .education {
-  width: 70%;
+  width: 85rem;
   margin: 0 auto;
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 18rem);
   justify-content: space-around;
   gap: 2rem;
 }
@@ -174,6 +159,7 @@ h2 {
   margin-bottom: 1rem;
 }
 .svg--icon {
+  cursor: pointer;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
   width: 30px;
   height: 30px;
@@ -181,7 +167,7 @@ h2 {
 }
 .education > div {
   background-color: #0000ff1b;
-  padding: 2rem;
+  padding: 1rem;
   /* border: 2px solid blue; */
   border-radius: 9px;
   box-shadow: 0 0 2px 0 black;
@@ -190,7 +176,7 @@ ul {
   margin-left: 3rem;
 }
 li {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 .blog-link:link,
@@ -210,7 +196,7 @@ li {
   padding: 4rem 0 2rem 0;
 }
 .section-3 h2 {
-  width: 70%;
+  width: 85rem;
   text-align: center;
   font-size: 3.2rem;
   text-transform: uppercase;
@@ -220,11 +206,11 @@ li {
   margin-bottom: 4rem;
 }
 .section-3 p {
-  width: 70%;
+  width: 85rem;
   font-size: 2.2rem;
 
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   color: #dfdfdf;
 }
 
@@ -234,12 +220,14 @@ li {
   color: #000;
   margin-right: 4rem;
 }
-
+.sec-project {
+  padding: 6rem 0;
+}
 .js--projects {
-  width: 70%;
+  width: 75rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 18rem);
   justify-content: center;
   gap: 2rem;
   color: #ddd;
@@ -253,21 +241,21 @@ li {
 }
 .js--projects div h6 {
   color: #cf0808d4;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .js--projects div p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
 .js--projects div a {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 
-  position: absolute;
-  top: 85%;
+  /* position: absolute;
+  top: 87%; */
   color: #ec8d39;
 }
 .seemore-cont {
@@ -276,9 +264,10 @@ li {
 }
 .seeMore {
   cursor: pointer;
+  text-align: center;
   border-radius: 9px;
   background-color: #18914a95;
-  padding: 1.5rem 1rem;
+  padding: 1.2rem 2.4rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -287,6 +276,170 @@ li {
   box-shadow: 0 0 3px 0 black;
 }
 
+.contect-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header--option--2 {
+  margin: 0 auto;
+  max-width: 35rem;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+}
 .d--none {
   display: none;
+}
+
+@media (max-width: 880px) {
+  .web-cont {
+    width: 65rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .webname {
+    font-size: 2.2rem;
+  }
+  .box-posi {
+    width: 35rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  .section-1 h1 {
+    width: 65rem;
+  }
+  .section-1 p {
+    width: 65rem;
+  }
+  .education {
+    width: 60rem;
+    grid-template-columns: repeat(3, 18rem);
+  }
+  .section-3 h2 {
+    width: 65rem;
+  }
+  .section-3 P {
+    width: 65rem;
+  }
+  .js--projects {
+    width: 60rem;
+    grid-template-columns: repeat(3, 18rem);
+  }
+  .js--projects div {
+    height: 35rem;
+  }
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 680px) {
+  .web-cont {
+    width: 45rem;
+  }
+  .webname {
+    font-size: 2.2rem;
+  }
+  .box-posi {
+    width: 30rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+  .section-1 h1 {
+    width: 45rem;
+    font-size: 2.6rem;
+  }
+  .section-1 p {
+    width: 45rem;
+    font-size: 2rem;
+  }
+  .education {
+    width: 40rem;
+    grid-template-columns: repeat(2, 17rem);
+  }
+  .education > div {
+    height: 25rem;
+  }
+  .section-3 h2 {
+    width: 45rem;
+    font-size: 2.4rem;
+  }
+  .section-3 P {
+    width: 45rem;
+    font-size: 2rem;
+  }
+  .js--projects {
+    width: 40rem;
+    grid-template-columns: repeat(2, 19rem);
+  }
+  .js--projects div {
+    height: 35rem;
+  }
+}
+@media (max-width: 500px) {
+  .web-cont {
+    width: 25rem;
+  }
+  .box-posi {
+    width: 24rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+  .post {
+    font-size: 1rem;
+  }
+  .profile-div {
+    height: 15rem;
+    width: 15rem;
+    top: 90%;
+  }
+  .profile {
+    width: 13rem;
+    height: 13rem;
+  }
+  .section-1 {
+    padding: 10rem 0 3rem 0;
+  }
+  .section-1 h1 {
+    max-width: 25rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+  }
+  .section-1 p {
+    width: 25rem;
+    margin-bottom: 1rem;
+  }
+  .education {
+    width: 22rem;
+    grid-template-columns: repeat(1, 20rem);
+  }
+  .education > div {
+    height: 22rem;
+  }
+  .section-3 h2 {
+    width: 25rem;
+    font-size: 2rem;
+  }
+  .section-3 P {
+    width: 25rem;
+    font-size: 1.8rem;
+  }
+  .js--projects {
+    width: 24rem;
+    grid-template-columns: repeat(1, 24rem);
+  }
+  .js--projects div {
+    height: 26rem;
+  }
+  .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.5rem;
+  }
 }
